@@ -1,0 +1,64 @@
+.social-main {
+    place-content: center;
+    align-items: center;
+    background-color: rgb(253, 255, 252);
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column nowrap;
+    gap: 40px;
+    height: min-content;
+    overflow: hidden;
+    padding: 100px;
+    position: relative;
+    /* width: 100%; */
+}
+
+.social-main-mobile {
+    padding: 20px;
+}
+
+.social-main-tablet {
+    padding: 50px;
+}
+
+.social-main-web {
+    padding: 100px;
+}
+
+.social-text {
+    color: var(--color-banner);
+    font-family: var(--font-family-india);
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.social-main-web .social-text {
+    font-size: 350px;
+    font-weight: 700;
+}
+
+.social-main-tablet .social-text {
+    font-size: 150px;
+    font-weight: 700;
+}
+
+.social-main-mobile .social-text {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.social-icons {
+    place-content: center flex-start;
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row nowrap;
+    gap: 20px;
+    height: min-content;
+    overflow: visible;
+    padding: 0px;
+    position: relative;
+    width: min-content;
+}

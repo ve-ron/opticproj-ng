@@ -1,0 +1,48 @@
+.reviews-main {
+    place-content: center flex-start;
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column nowrap;
+    gap: 0px;
+    height: min-content;
+    overflow: hidden;
+    position: relative;
+    /* width: 100%; */
+}
+
+.reviews-main-mobile {
+    padding: 60px 20px;
+}
+
+.reviews-main-tablet {
+    padding: 50px;
+}
+
+.reviews-main-web {
+    padding: 100px;
+}
+
+.reviews-container {
+    place-content: center;
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row nowrap;
+    gap: 20px;
+    height: min-content;
+    max-width: 1000px;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+}
+
+.reviews-main-mobile .reviews-container {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.review-wrapper {
+    flex: 1 1 0;
+}

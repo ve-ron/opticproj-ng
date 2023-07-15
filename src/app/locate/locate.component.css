@@ -1,0 +1,27 @@
+.locate-main {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    padding: 100px;
+    /* width: 100%; */
+    position: relative;
+}
+
+.locate-head {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.locate-body {
+    max-width: 500px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: normal;
+}
+
+.locate-button {
+    background-color: var(--color-button);
+}

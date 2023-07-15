@@ -1,0 +1,15 @@
+.home-main {
+    width: 100%;
+    min-height: 100%;
+    margin: auto;
+    place-content: center flex-start;
+    align-items: center;
+    flex-flow: column nowrap;
+    height: min-content;
+    overflow: hidden;
+    padding: 0px;
+    display: contents;
+    gap: 0px;
+    position: relative;
+    width: 1200px;
+}

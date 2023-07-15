@@ -1,0 +1,35 @@
+<div class="banner-main banner-main-{{currentScreenSize}}" id="banner">
+    <div class="logo-main">
+        <div class="logo-cover">
+            <div>
+                <img height="200px" src="assets/images/logo-mod.png">
+            </div>
+
+        </div>
+    </div>
+    <div class="banner-header">
+        <div class="banner-header-main font-body-head">
+            <button mat-button matTooltip="logo" aria-label="" [style.fontFamily]="'inherit'">
+                <mat-icon svgIcon="glasses-icon" [style.width]="'20%'"></mat-icon>
+                {{brandName}}
+            </button>
+            <div style="flex-grow: 1;"></div>
+            <button mat-button [style.fontFamily]="'inherit'">
+                Store
+            </button>
+            <button mat-button [style.fontFamily]="'inherit'">
+                Contact
+            </button>
+        </div>
+    </div>
+    <div class="banner-footer">
+        <button mat-icon-button matTooltip="move-down" aria-label="">
+            <mat-icon>keyboard_arrow_down</mat-icon>
+        </button>
+    </div>
+
+    <ng-particles [id]="id" [options]="particlesOptions" [particlesInit]="particlesInit"
+        (particlesLoaded)="particlesLoaded($event)" [style.height]="'100%'" [style.postion]="'relative'"></ng-particles>
+
+
+</div>

@@ -1,0 +1,85 @@
+.poster-main-wrapper {
+    background-color: var(--color-poster-1);
+}
+
+.poster-main {
+    place-content: center;
+    align-items: center;
+    background-color: var(--color-poster-2);
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row nowrap;
+    gap: 10px;
+    height: min-content;
+    min-height: 800px;
+    mix-blend-mode: luminosity;
+    overflow: hidden;
+    padding: 100px;
+    position: relative;
+    /* width: 100%; */
+}
+
+.poster-text {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    transform: none;
+
+    flex: 1 0 0px;
+    height: auto;
+    /* max-width: 1000px; */
+    position: relative;
+    white-space: pre-wrap;
+    width: 1px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    z-index: 10;
+    
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+}
+
+.poster-image {
+    inset: 0px;
+    flex: 0 0 auto;
+    opacity: 0.3;
+    overflow: hidden;
+    position: absolute;
+    
+}
+
+.poster-image-container {
+    position: absolute;
+    border-radius: inherit;
+    inset: 0px;
+}
+
+.poster-image-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-position: center center;
+    object-fit: cover;
+    image-rendering: auto;
+}
+
+.poster-main-tablet {
+    height: 600px;
+    min-height: unset;
+    padding: 50px;
+}
+
+.poster-main-mobile {
+    gap: 40px;
+    min-height: unset;
+    padding: 100px 20px;
+}
+
+.poster-main-mobile .poster-text {
+    font-size: 32px;
+}

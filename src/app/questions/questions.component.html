@@ -1,0 +1,20 @@
+<div class="questions-main questions-main-{{currentScreenSize}}" >
+    <div class="common-questions font-head">
+        <span>{{textJson.question_head}}</span>
+    </div>
+    <div class="questions-container">
+        <app-each-question
+            [heading]="textJson.question_head_1"
+            [content]="textJson.question_body_1"
+        ></app-each-question>
+        <app-each-question 
+            [heading]="textJson.question_head_2"
+            [content]="textJson.question_body_2"
+        ></app-each-question>
+        <app-each-question 
+            [heading]="textJson.question_head_3"
+            [content]="textJson.question_body_3"
+        ></app-each-question>
+    </div>
+
+</div>

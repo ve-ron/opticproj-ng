@@ -1,0 +1,116 @@
+.info-main {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 60px;
+    position: relative;
+    place-content: center flex-start;
+    align-items: center;
+}
+
+.info-main-mobile {
+    padding: 60px 20px;
+}
+
+.info-main-tablet {
+    padding: 50px;
+}
+
+.info-main-web {
+    padding: 100px;
+}
+
+.info-card {
+    place-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 1000px;
+    gap: 60px;
+    display: flex;
+}
+
+.info-card .info-card-text {
+    place-content: flex-start center;
+    align-items: flex-start;
+    display: flex;
+    flex: 1 0 0px;
+    flex-flow: column nowrap;
+    gap: 20px;
+    height: min-content;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+    width: 1px;
+}
+
+.info-card .info-card-header {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: left;
+}
+
+.info-card .info-card-content {
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.info-card .info-image {
+    aspect-ratio: 0.98 / 1;
+    filter: grayscale(1);
+    height: 480px;
+    mix-blend-mode: luminosity;
+    overflow: hidden;
+    position: relative;
+}
+
+.info-card .info-image-cover {
+    position: absolute;
+    border-radius: inherit;
+    inset: 0px;
+}
+
+.info-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-position: center center;
+    object-fit: cover;
+    image-rendering: auto;
+}
+
+.info-main-mobile .info-card {
+    flex-direction: column;
+    gap: 40px;
+}
+
+.info-main-tablet .info-card {
+    flex-direction: row;
+    flex-flow: row nowrap;
+}
+
+.info-main-mobile .info-image{
+    border-radius: 20px;
+    border-radius: 20px;
+    flex: 0 0 auto;
+    height: 322px;
+    width: 100%;
+}
+
+.info-main-tablet .info-image{
+    border-radius: 30px;
+    
+}
+
+.info-main-web .info-image{
+    border-radius: 40px;
+}
+
+.info-main-mobile .info-card-text {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.info-main-mobile #info-card-1 .info-card-text {
+    order: 1;   
+}
