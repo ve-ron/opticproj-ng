@@ -22,8 +22,8 @@ import { texts } from '../constants';
   encapsulation: ViewEncapsulation.None
 })
 export class BannerComponent implements OnInit, OnDestroy {
-  brandName = texts.brand_name;
 
+  textJson = texts;
 
   id = "tsparticles-main";
 
@@ -77,13 +77,13 @@ export class BannerComponent implements OnInit, OnDestroy {
         value: ["#BD10E0","#B8E986","#50E3C2","#FFD300","#E86363"],//"#ffffff",
       },
       move: {
-        direction: MoveDirection.none,
+        direction: MoveDirection.bottom,
         enable: true,
         outModes: {
-          default: OutMode.bounce,
+          default: OutMode.out,
         },
         random: false,
-        speed: 5,
+        speed: 3,
         straight: false,
         attract: {
           enable: true,
@@ -94,7 +94,7 @@ export class BannerComponent implements OnInit, OnDestroy {
       number: {
         density: {
           enable: true,
-          area: 800,
+          area: 2000,
         },
         value: 80,
       },
@@ -119,38 +119,38 @@ export class BannerComponent implements OnInit, OnDestroy {
         },
         image: [
           {
-            src: "assets/images/glasses-50E3C2.png",
+            src: this.textJson.brand_img_1,
             width: 250,
             height: 100
           },
           {
-            src: "assets/images/glasses-B8E986.png",
+            src: this.textJson.brand_img_2,
             width: 250,
             height: 100
           },
           {
-            src: "assets/images/glasses-BD10E0.png",
+            src: this.textJson.brand_img_3,
             width: 250,
             height: 100
           },
           {
-            src: "assets/images/glasses-E86363.png",
+            src: this.textJson.brand_img_4,
             width: 250,
             height: 100
           },
           {
-            src: "assets/images/glasses-FFD300.png",
+            src: this.textJson.brand_img_5,
             width: 250,
             height: 100
           },
       ]
       },
       size: {
-        value: 20,
+        value: 30,
         random: true,
         anim: {
           enable: false,
-          speed: 40,
+          speed: 30,
           size_min: 0.1,
           sync: false
         }
@@ -163,7 +163,7 @@ export class BannerComponent implements OnInit, OnDestroy {
 
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer, breakpointObserver: BreakpointObserver) {
-    iconRegistry.addSvgIcon('glasses-icon', sanitizer.bypassSecurityTrustResourceUrl('assets/images/glasses-black.svg'));
+    iconRegistry.addSvgIcon('glasses-icon', sanitizer.bypassSecurityTrustResourceUrl(this.textJson.brand_svg));
 
     breakpointObserver
       .observe([

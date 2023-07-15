@@ -4,6 +4,7 @@ import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import {DomSanitizer} from '@angular/platform-browser';
 import {MatIconRegistry} from '@angular/material/icon';
+import { texts } from '../constants';
 
 const TWITTER_ICON = `
 <svg height="100%" class="svg-icon" viewBox="0 0 20 20">
@@ -31,6 +32,8 @@ const INSTAGRAM_ICON = `
 export class SocialComponent implements OnInit, OnDestroy {
   destroyed = new Subject<void>();
   currentScreenSize!: string;
+
+  testJson = texts;
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer, breakpointObserver: BreakpointObserver) {
     iconRegistry.addSvgIconLiteral('twitter-icon', sanitizer.bypassSecurityTrustHtml(TWITTER_ICON));

@@ -28,6 +28,7 @@ import { EachQuestionComponent } from './questions/each-question/each-question.c
 import { HttpClientModule } from '@angular/common/http';
 
 import { NgParticlesModule } from "ng-particles";
+import { GotoDirective } from './goto.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +43,8 @@ import { NgParticlesModule } from "ng-particles";
     SocialComponent,
     SubscribeComponent,
     EachReviewComponent,
-    EachQuestionComponent
+    EachQuestionComponent,
+    GotoDirective
   ],
   imports: [
     BrowserModule,

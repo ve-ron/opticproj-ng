@@ -1,22 +1,22 @@
-<div class="social-main social-main-{{currentScreenSize}}">
+<div class="social-main social-main-{{currentScreenSize}}" id="social">
     <div class="social-text">
         India❤
     </div>
     <div class="social-icons">
         <div>
-            <button mat-icon-button matTooltip="twitter" aria-label="">
+            <a mat-icon-button matTooltip="twitter" [href]="testJson.twitter_url" target="_blank" aria-label="">
                 <mat-icon svgIcon="twitter-icon"></mat-icon>
-            </button> 
+            </a> 
         </div>
         <div>
-            <button mat-icon-button matTooltip="facebook" aria-label="">
+            <a mat-icon-button matTooltip="facebook" [href]="testJson.facebook_url" target="_blank" aria-label="">
                 <mat-icon svgIcon="facebook-icon"></mat-icon>
-            </button>
+            </a>
         </div>
         <div>
-            <button mat-icon-button matTooltip="instagram" aria-label="">
+            <a mat-icon-button matTooltip="instagram" [href]="testJson.instagram_url" target="_blank" aria-label="">
                 <mat-icon svgIcon="instagram-icon"></mat-icon>
-            </button>
+            </a>
         </div>
     </div>
 </div>

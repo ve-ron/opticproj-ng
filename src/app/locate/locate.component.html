@@ -1,4 +1,4 @@
-<div class="locate-main">
+<div class="locate-main" id="locate" #locateVC>
     <div class="locate-head font-head">{{textJson.locate_head}}</div>
     <div class="locate-body font-body">
         <p>
@@ -6,6 +6,6 @@
         </p>
     </div>
     <div class="locate-footer font-body-head">
-        <button class="locate-button" [style.backgroundColor]="'orange'"  [style.fontFamily]="'inherit'" mat-flat-button>Find Your Style</button>
+        <a class="locate-button" [href]="textJson.google_map" target="_blank"  [style.backgroundColor]="'orange'"  [style.fontFamily]="'inherit'" mat-flat-button>Find Your Style</a>
     </div>
 </div>

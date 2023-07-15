@@ -83,4 +83,5 @@
 .banner-footer {
     position: absolute;
     top: 95%;
+    pointer-events: all;
 }
