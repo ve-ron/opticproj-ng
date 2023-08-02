@@ -85,3 +85,11 @@
     top: 95%;
     pointer-events: all;
 }
+
+.banner-main .font-body-head button span{
+    color: var(--color-poster-1);
+}
+
+.banner-main .banner-footer button{
+    color: var(--color-poster-1);
+}

@@ -6,7 +6,8 @@
     --font-family-head: "Wix Madefor Display", sans-serif;
     --font-family-india: Roboto, "Helvetica Neue", sans-serif;;
     --color-button: "orange";
-    --color-banner: rgb(235, 234, 179);
+    --color-banner: #111340;
+    --color-text: rgb(235, 234, 179);
     --color-card: rgb(236, 255, 227);
     --color-poster-2: rgb(1, 22, 39);
     --color-poster-1: rgb(253, 255, 252);
